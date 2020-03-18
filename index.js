@@ -1,5 +1,5 @@
 'use strict';
 
-console.log('Hello from the computer');
+console.log('Hello');
 
 console.log(process.args.splice());
