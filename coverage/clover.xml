@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1584569038742" clover="3.2.0">
-  <project timestamp="1584569038742" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="1" files="1" classes="1"/>
+<coverage generated="1584574952286" clover="3.2.0">
+  <project timestamp="1584574952286" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="8" coveredelements="8" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
     <file name="input.js" path="/mnt/c/users/tamir/codefellows/401/notes/lib/input.js">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="7" count="5" type="stmt"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
