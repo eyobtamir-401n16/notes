@@ -14,19 +14,19 @@ const goodInput = ['-a', 'This is a good note'];
 describe('bad input handler', () =>{
   it('handle empty input', () =>{
     let result = new input(badInput1);
-    expect(result.valid()).toBeFalsey()
+    expect(result.valid()).toBeFalsy()
   })
   it('handle wrong input', () =>{
     let result = new input(badInput2);
-    expect(result.valid()).toBeFalsey()
+    expect(result.valid()).toBeFalsy()
   })
   it('handle bad flag and bad input', () =>{
     let result = new input (badInput3);
-    expect(result.valid()).toBe()
+    expect(result.valid()).toBeFalsy()
   })
   it('handle bad flag  input', () =>{
     let result = new input(badInput4);
-    expect(result.valid()).toBeFalsey()
+    expect(result.valid()).toBeFalsy()
   })
 })
 describe('good input handler',() =>{
