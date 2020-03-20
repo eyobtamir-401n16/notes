@@ -1,5 +1,7 @@
 'use strict';
 
-console.log('Hello');
+const Input = require('./lib/input.js');
+const Notes = require('./lib/notes.js');
 
-console.log(process.args.splice());
+let result = new Input(process.argv.slice(2));
+let notes = new Notes(result);
