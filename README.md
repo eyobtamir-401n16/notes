@@ -7,7 +7,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/eyobtamir-401n16/notes/tree/daythree)
+- [PR Link](https://github.com/eyobtamir-401n16/notes/tree/daythree)
 
 
 ### Setup
