@@ -38,7 +38,7 @@
 
 ### Links and Resources
 
-- [PR Link](https://github.com/eyobtamir-401n16/notes/tree/daythree)
+- [PR Link](https://github.com/eyobtamir-401n16/notes/pull/3)
 
 
 ### Setup
