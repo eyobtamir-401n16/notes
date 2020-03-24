@@ -1,11 +1,17 @@
 'use strict';
 
+const minimist = require('minimist');
+const mongoose = require('mongoose');
+
 const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
-const mongoose = require('mongoose');
-const dbURL = 'mongodb+srv://Eyob1984:Sourcecode1$@cluster0-rk6f8.mongodb.net/app';
+
 const Mynotes = require('./models/note-schema.js');
-const minimist = require('minimist');
+
+const Mycateogories = require('./models/cateogories-schema.js')
+
+const dbURL = 'mongodb+srv://Eyob1984:Sourcecode1$@cluster0-rk6f8.mongodb.net/app';
+
 
 mongoose.connect(dbURL, {
   useNewUrlParser: true, useUnifiedTopology: true
@@ -16,9 +22,11 @@ let notes = new Notes(result);
 console.log(notes)
 const dbOpera = async () =>{
   let allNotes = await Mynotes.find();
+  let allCategories = await Mycateogories.find();
   allNotes.forEach(value =>{
-    console.log(value.notes)
+    console.log(value.note)
   })
+
   if(args.length > 0){
     let newNote = new Mynotes({
       note:args[0],
@@ -30,6 +38,15 @@ const dbOpera = async () =>{
       console.error(error);
     }
   }
+  let allCats = await Mycateogories.findOne({name:'xyz'});
+  let catId = catId._id;
+  
+
+console.log(allCats)
+
+  allCategories.forEach(value =>{
+    console.log(value.name);
+  })
 
   mongoose.disconnect()
 }
